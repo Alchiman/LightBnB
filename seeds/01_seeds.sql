@@ -23,7 +23,7 @@ VALUES
   '3634 Scotts Lane',
   'Cumberland',
   'British Columbia',
-  'V0R 1S0',
+  'V0R 1S0'
 ), (
   2,
   'Santiago Creek',
@@ -58,8 +58,13 @@ VALUES
 
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
-VALUES (52, 88, 1, 3), (112000, 77, 2, 1), (100580, 999, 3, 4), (693, 99985, 2, 2), (14785, 999, 1, 5); 
+VALUES 
+  ('2018-02-12T08:00:00.000Z', '2018-03-12T08:00:00.000Z', 1, 3)
+, ('2018-02-12T08:00:00.000Z', '2018-03-12T08:00:00.000Z', 2, 1)
+, ('2018-02-12T08:00:00.000Z', '2018-03-12T08:00:00.000Z', 3, 4)
+, ('2018-02-12T08:00:00.000Z', '2018-03-12T08:00:00.000Z', 2, 2)
+, ('2018-02-12T08:00:00.000Z', '2018-03-12T08:00:00.000Z', 1, 5); 
 
 
-INSERT INTO property_reviews(guest_id, property_id, reservation_id, rating)
-VALUES (1, 3, 2, 10), (2, 2, 4, 2), (3, 3, 1, 4), (4, 3, 5, 7);
+INSERT INTO property_reviews(guest_id, property_id, reservation_id, rating, message)
+VALUES (1, 3, 2, 10, 'message'), (2, 2, 4, 2, 'message'), (3, 3, 1, 4, 'message'), (4, 3, 5, 7, 'message');
