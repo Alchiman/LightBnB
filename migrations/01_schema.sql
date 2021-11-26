@@ -1,4 +1,4 @@
--- DROP TABLE IF EXISTS users, properties, reservations, property_reviews CASCADE;
+DROP TABLE IF EXISTS users, properties, reservations, property_reviews CASCADE;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY NOT NULL,
